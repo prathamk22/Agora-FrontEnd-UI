@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragments.VotingAlgorithm">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/back"
+                android:src="@drawable/back_green"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose your Algo"
+                android:textSize="24sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/AppGreen"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We provide varity of voting algorithm for every type of Election. Choose one of them"
+                android:textSize="17sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/AppGrey"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginLeft="10dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional Settings"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/AppBlack"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invite Voters"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/AppBlack"
+                    android:checked="true"
+                    android:buttonTint="@color/AppGreen"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get real time updates"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/AppGrey"
+                    android:buttonTint="@color/AppGrey"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ballots Visibility"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/AppBlack"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Completely Secret and never shown to anyone"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/AppBlack"
+                    android:checked="true"
+                    android:buttonTint="@color/AppGreen"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visible only to me"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/AppGrey"
+                    android:buttonTint="@color/AppGrey"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visible to everyone with access to election"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/AppGrey"
+                    android:buttonTint="@color/AppGrey"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Who can see the list of voters ?"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/AppBlack"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Only Me"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/AppBlack"
+                    android:checked="true"
+                    android:buttonTint="@color/AppGreen"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Everyone with access to Election"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/AppGrey"
+                    android:buttonTint="@color/AppGrey"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finish"
+                    android:textAllCaps="true"
+                    android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
+                    android:textColor="@color/AppGreen"
+                    android:elevation="2dp"
+                    android:textSize="18sp"
+                    android:id="@+id/nextHolder"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:background="@drawable/next_custom_background"
+                    android:layout_marginEnd="30dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

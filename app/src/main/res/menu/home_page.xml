@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/total_election"
+        android:orderInCategory="100"
+        android:title="Total Election"
+        android:icon="@drawable/vote_icon"/>
+
+    <item
+        android:id="@+id/pending_election"
+        android:orderInCategory="100"
+        android:title="Pending Election"
+        android:icon="@drawable/pause"/>
+
+    <item
+        android:id="@+id/active_election"
+        android:orderInCategory="100"
+        android:title="Active Election"
+        android:icon="@drawable/play"/>
+
+    <item
+        android:id="@+id/finished_election"
+        android:orderInCategory="100"
+        android:title="Finished Election"
+        android:icon="@drawable/finished_drawable"/>
+
+
+
+</menu>
